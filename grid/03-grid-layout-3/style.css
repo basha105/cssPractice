@@ -5,6 +5,10 @@
 
 .container {
   text-align: center;
+  display: grid;
+  resize: both;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(autofit, minmax(150px, 1fr));
 }
 
 .container div {
