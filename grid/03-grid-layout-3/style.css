@@ -6,9 +6,11 @@
 .container {
   text-align: center;
   display: grid;
+  overflow: auto;
   resize: both;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(autofit, minmax(150px, 1fr));
+  grid-template-rows: 2fr, 4fr, 1fr;
+  grid-template-columns: 1fr, 4fr;
+  
 }
 
 .container div {
@@ -21,6 +23,7 @@
 
 .header {
   background-color: #393f4d;
+  grid-template-columns: 1 / 2;
 }
 
 .menu ul,
